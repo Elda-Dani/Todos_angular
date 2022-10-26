@@ -1,0 +1,39 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col div col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+<h1 style="text-align: center;">Login</h1>
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"><br>
+                    <div class="p-3 mb-2 bg-light text-dark">
+                    <label for="exampleFormControlInput1" class="form-label">Email Id</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email"[(ngModel)]="email">
+                </div>    
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="p-3 mb-2 bg-light text-dark">
+                    <label for="inputPassword5" class="form-label">Password</label>
+                    <input type="password" id="inputPassword5" class="form-control" placeholder="Password" aria-describedby="passwordHelpBlock" name="password"[(ngModel)]="password">
+                   
+                    </div>
+
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    
+                    <button class="btn btn-primary" (click)="readValues()">Log In</button>
+                </div>
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                
+                    <a routerLink="/signup">new users click here</a>
+                    </div>
+                    
+                    
+                </div>
+        </div>
+    </div>
+</div>
+

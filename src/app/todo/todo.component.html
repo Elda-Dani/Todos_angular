@@ -1,0 +1,38 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col div col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        
+        <div class="row g-3">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+<label for="" class="form-label">Message</label>
+<textarea name="todo" [(ngModel)]="todo" id="" cols="30" rows="10" class="form-control"></textarea>
+
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <button class="btn btn-success" (click)="readvalue()">Post</button>
+            </div>
+</div>
+<br>
+<div class="row g-4">
+    <div *ngFor="let i of dataD" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{i.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{i.postdate}}</h6>
+          <p class="card-text">{{i.todo}}</p>
+          
+        </div>
+      </div>
+      </div>
+
+</div>
+
+      
+        
+        </div>
+    </div>
+</div>
+
+
